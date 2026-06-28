@@ -28,7 +28,7 @@ const CARDS: Card[] = [
   {
     badge: "AI in practice",
     title: "Agents I actually run",
-    body: "I run an agent-operated build studio: a short brief becomes working software in days, the architecture and prompts done by me. Biome Synth is one result, an AI instrument that began as an interview skill and shipped live.",
+    body: "I build with AI agents on Claude Code every day, so a short brief becomes working software in days, the architecture and prompts done by me. Biome Synth is one result, an AI instrument that began as an interview skill and shipped live.",
     links: [
       { label: "Biome Synth (live)", href: "https://biome-synth.lovable.app/" },
       { label: "More of my work", href: "https://bar-builds.vercel.app/portfolio/" },
