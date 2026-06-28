@@ -1,26 +1,138 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   HiO design system, rebuilt from hio.ai.
+   Palette, gradients, soft shadows and frosted glass are faithful to the
+   brand: blue -> purple -> magenta with a mint accent and a lime CTA.
+--------------------------------------------------------------------------- */
+
+@theme {
+  /* Brand */
+  --color-blue-brand: #0040ff;
+  --color-purple-brand: #6937d4;
+  --color-magenta-brand: #d12ea8;
+  --color-mint: #04ffc3;
+  --color-lime: #aadb1e;
+  --color-lime-hover: #92c219;
+
+  /* Ink + surfaces */
+  --color-navy: #0d1b2e;
+  --color-surface: #f7fbff;
+  --color-surface-2: #eef3fb;
+  --color-surface-3: #eff5fc;
+  --color-lavender: #d8c9ff;
+  --color-peach: #fdd9c7;
+
+  /* Text */
+  --color-body: #4a5568;
+  --color-muted: #718096;
+
+  /* Soft, navy-tinted elevation (HiO signature) */
+  --shadow-soft-sm: 0 2px 8px rgba(13, 27, 46, 0.08);
+  --shadow-soft-md: 0 8px 32px rgba(13, 27, 46, 0.125);
+  --shadow-soft-lg: 0 20px 60px rgba(13, 27, 46, 0.18);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --header-h: 64px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 16px);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* The brand gradient as clipped text (hero + section heads). */
+@utility gradient-text {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-blue-brand),
+    var(--color-purple-brand),
+    var(--color-magenta-brand)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Four-stop variant that leads with mint, for large section heads. */
+@utility gradient-text-mint {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-mint) 0%,
+    var(--color-blue-brand) 35%,
+    var(--color-purple-brand) 73%,
+    var(--color-magenta-brand) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Frosted-glass pill / surface. */
+@utility frosted {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+    inset 0 -2px 2px rgba(27, 35, 85, 0.07),
+    inset 0 4px 6px rgba(255, 255, 255, 0.4),
+    0 0 3.4px rgba(0, 39, 127, 0.17);
+}
+
+/* Blue brand button glow. */
+@utility shadow-brand {
+  box-shadow: 0 2px 8px rgba(0, 64, 255, 0.23);
+}
+
+/* Typed-cursor blink for the demo draft. */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-rise {
+  animation: rise 0.35s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink,
+  .animate-rise {
+    animation: none;
+  }
 }
