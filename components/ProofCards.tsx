@@ -31,7 +31,7 @@ const CARDS: Card[] = [
     body: "I build with AI agents on Claude Code every day, so a short brief becomes working software in days, the architecture and prompts done by me. Biome Synth is one result, an AI instrument that began as an interview skill and shipped live.",
     links: [
       { label: "Biome Synth (live)", href: "https://biome-synth.lovable.app/" },
-      { label: "More of my work", href: "https://bar-builds.vercel.app/portfolio/" },
+      { label: "More of my work", href: "https://github.com/barmoshe" },
     ],
   },
 ];
