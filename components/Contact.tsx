@@ -17,9 +17,9 @@ export default function Contact() {
           Let&apos;s build hio for real.
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-white/70">
-          Tel Aviv is home, so hybrid works well for me. I would rather show you
+          Tel Aviv is home, so hybrid works well. I&apos;d rather show you
           something real than talk about it, which is the whole point of this
-          page. If it landed, I&apos;m a short reply or a coffee away.
+          page. If it landed, I&apos;m a reply or a coffee away.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">

@@ -1,18 +1,18 @@
 const STEPS = [
   {
     n: "01",
-    title: "You describe",
-    body: "A few lines on the idea is enough. No spec, no deck, half-baked is fine. I ask the questions that matter.",
+    title: "Ship something real",
+    body: "A working thing beats a description. You're clicking one, not reading about it.",
   },
   {
     n: "02",
-    title: "I build",
-    body: "A real first version you can open and click, usually within days. This page is a fair sample of the pace.",
+    title: "Keep it simple",
+    body: "No backend where the front end makes the point. Complexity only where it earns its place.",
   },
   {
     n: "03",
-    title: "We decide together",
-    body: "You react to something real instead of a promise. It's the cheapest moment to change direction, so we use it.",
+    title: "Days, not weeks",
+    body: "This went from the job post to deployed in under a day.",
   },
 ];
 
@@ -22,10 +22,10 @@ export default function HowIWork() {
       <div className="mx-auto max-w-5xl">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <p className="text-sm font-bold uppercase tracking-[0.08em] text-blue-brand">
-            How I work
+            How I build
           </p>
           <h2 className="mt-3 text-[clamp(1.8rem,1.2rem+2.4vw,2.8rem)] font-black leading-[1.1] tracking-[-1px] text-navy">
-            Built with you, not instead of you.
+            Three things this page already shows.
           </h2>
         </div>
 

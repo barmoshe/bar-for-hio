@@ -8,7 +8,6 @@ export const contentType = "image/png";
 const BLUE = "#0040ff";
 const PURPLE = "#6937d4";
 const MAGENTA = "#d12ea8";
-const MINT = "#04ffc3";
 const LIME = "#aadb1e";
 const NAVY = "#0d1b2e";
 const SURFACE = "#f7fbff";

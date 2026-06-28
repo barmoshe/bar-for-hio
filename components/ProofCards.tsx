@@ -10,7 +10,7 @@ const CARDS: Card[] = [
   {
     badge: "Frontend",
     title: "Polished React, by default",
-    body: "The role asks for real-time React that makes AI feel human. The demo above is exactly that: a streaming inbox, a typed draft, one-tap approve, all client-side React and TypeScript. Before that, Israelify was a full Spotify-style app with my own Node and MongoDB behind a React front end.",
+    body: "Real-time React that makes AI feel human is the demo above: a streaming inbox, a typed draft, one-tap approve. Before that, Israelify was a Spotify-style app with my own Node and MongoDB behind a React front end.",
     links: [
       { label: "Israelify (front end)", href: "https://github.com/Gal-Or/IsraelifyApp" },
       { label: "Node + Mongo backend", href: "https://github.com/barmoshe/Israelify-backend" },
@@ -19,7 +19,7 @@ const CARDS: Card[] = [
   {
     badge: "Backend + systems",
     title: "Orchestration that holds up",
-    body: "hio orchestrates agent workflows at scale, so the backend has to be more than CRUD. I built a cross-language pipeline on Temporal: one workflow coordinating Go, Python and TypeScript workers across their own task queues, end to end. It is featured on Temporal's own Code Exchange.",
+    body: "Agent workflows at scale need more than CRUD. I built a pipeline on Temporal: one workflow coordinating Go, Python and TypeScript workers across their own queues, end to end. It's featured on Temporal's Code Exchange.",
     links: [
       { label: "Temporal Code Exchange", href: "https://temporal.io/code-exchange/cross-language-data-processing-service-with-temporal" },
       { label: "The repo", href: "https://github.com/barmoshe/data-processing-service" },
@@ -28,7 +28,7 @@ const CARDS: Card[] = [
   {
     badge: "AI in practice",
     title: "Agents I actually run",
-    body: "I run an agent-operated build studio: a short brief becomes working software in hours to days, with the architecture, prompts and agent integration done by me. Biome Synth is one result, an AI-driven instrument that started its life as an interview skill and shipped as a live app.",
+    body: "I run an agent-operated build studio: a short brief becomes working software in days, the architecture and prompts done by me. Biome Synth is one result, an AI instrument that began as an interview skill and shipped live.",
     links: [
       { label: "Biome Synth (live)", href: "https://biome-synth.lovable.app/" },
       { label: "More of my work", href: "https://bar-builds.vercel.app/portfolio/" },

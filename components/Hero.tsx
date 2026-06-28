@@ -26,9 +26,8 @@ export default function Hero() {
 
         <p className="mx-auto mt-6 max-w-2xl text-[clamp(1rem,0.9rem+0.5vw,1.25rem)] leading-relaxed text-body">
           I&apos;m Bar Moshe, a full stack engineer in Tel Aviv. You&apos;re hiring
-          someone to build real-time, AI-native customer experiences. Reading the
-          job post, I figured the honest way to apply was to build a small one in
-          your own brand. Scroll down and try it.
+          someone to build real-time, AI-native customer experiences, so instead
+          of a CV I built you a small one. Try it below.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
@@ -49,7 +48,7 @@ export default function Hero() {
         </div>
 
         <p className="mt-5 text-[13px] text-muted">
-          No backend and no model call: just React and TypeScript, the stack
+          No backend, no model call. Just React and TypeScript, the stack
           you&apos;re hiring for.
         </p>
       </div>
