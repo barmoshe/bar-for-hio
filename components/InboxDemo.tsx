@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   conversations,
   CHANNEL_LABEL,
@@ -70,9 +70,17 @@ export default function InboxDemo() {
     return () => clearInterval(t);
   }, [selectedId, reduced, sent]);
 
+  const detailRef = useRef<HTMLDivElement>(null);
+
   function select(id: string) {
     setSelectedId(id);
     setEditing(false);
+    // On mobile the panes stack, so reveal the reply after tapping a message.
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      requestAnimationFrame(() =>
+        detailRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      );
+    }
   }
 
   function approve(text: string) {
@@ -149,7 +157,7 @@ export default function InboxDemo() {
       </div>
 
       {/* Detail pane */}
-      <div className="flex min-h-[420px] flex-col bg-white">
+      <div ref={detailRef} className="flex min-h-[420px] flex-col bg-white scroll-mt-20">
         <div className="flex items-center gap-2.5 border-b border-black/5 px-5 py-3.5">
           <ChannelIcon channel={selected.channel} size={32} />
           <div className="leading-tight">
