@@ -2,6 +2,7 @@ const LINKS = [
   { label: "Email me", href: "mailto:1barmoshe1@gmail.com", primary: true },
   { label: "GitHub", href: "https://github.com/barmoshe", primary: false },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/barmoshe/", primary: false },
+  { label: "Download CV", href: "/Bar_Moshe_Resume.pdf", primary: false, download: true },
 ];
 
 export default function Contact() {
@@ -27,8 +28,17 @@ export default function Contact() {
             <a
               key={l.href}
               href={l.href}
-              target={l.href.startsWith("http") ? "_blank" : undefined}
-              rel={l.href.startsWith("http") ? "noreferrer" : undefined}
+              download={l.download ? "" : undefined}
+              target={
+                l.download || l.href.startsWith("http") ? "_blank" : undefined
+              }
+              rel={
+                l.download
+                  ? "noopener"
+                  : l.href.startsWith("http")
+                    ? "noreferrer"
+                    : undefined
+              }
               className={
                 l.primary
                   ? "rounded-full bg-lime px-7 py-3.5 text-[15px] font-bold text-navy shadow-soft-sm transition hover:bg-lime-hover"
