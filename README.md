@@ -1,7 +1,7 @@
 # bar-for-hio
 
-A Full Stack Engineer application to [hio](https://hio.ai), built as a small
-working version of their own product instead of a cover letter.
+A Full Stack Engineer application to [hio](https://hio.ai), with a live rebuild
+of their core product loop instead of a cover letter.
 
 The page is a one-screen pitch in hio's visual language, with a live demo at its
 center: a unified inbox where messages from every channel land in one place, the

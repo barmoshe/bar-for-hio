@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Bar Moshe, for hio: a Full Stack Engineer application, built as a working mini-hio.";
+export const alt = "Bar Moshe, for hio: a Full Stack Engineer application, with a live rebuild of hio's core loop.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -79,7 +79,7 @@ export default async function OgImage() {
 
           <div style={{ display: "flex", flexDirection: "column", marginTop: 34 }}>
             <span style={{ fontSize: 74, fontWeight: 800, letterSpacing: "-0.03em", color: NAVY, lineHeight: 1.04 }}>
-              So I built you a
+              So I rebuilt
             </span>
             <span
               style={{
@@ -92,12 +92,12 @@ export default async function OgImage() {
                 color: "transparent",
               }}
             >
-              working hio.
+              hio&apos;s core loop.
             </span>
           </div>
 
           <span style={{ fontSize: 27, fontWeight: 500, color: BODY, marginTop: 30, lineHeight: 1.4 }}>
-            A live mini-hio, built in their own brand. One inbox, every channel, a draft in your voice.
+            hio&apos;s core loop, rebuilt in their own brand. One inbox, every channel, a draft in your voice.
           </span>
 
           <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: "auto" }}>

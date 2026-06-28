@@ -10,7 +10,7 @@ const inter = Inter({
 
 const title = "Bar Moshe, for HiO";
 const description =
-  "A Full Stack Engineer application, built as a working mini-HiO. By Bar Moshe.";
+  "A Full Stack Engineer application, with a live rebuild of hio's core loop. By Bar Moshe.";
 
 export const metadata: Metadata = {
   title,

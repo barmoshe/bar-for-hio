@@ -20,14 +20,14 @@ export default function Hero() {
         </span>
 
         <h1 className="mx-auto mt-6 max-w-3xl text-[clamp(2.4rem,1.4rem+4vw,4.5rem)] font-black leading-[1.02] tracking-[-1.5px]">
-          <span className="text-navy">So I built you a </span>
-          <span className="gradient-text">working hio.</span>
+          <span className="text-navy">So I rebuilt </span>
+          <span className="gradient-text">hio&apos;s core loop.</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-[clamp(1rem,0.9rem+0.5vw,1.25rem)] leading-relaxed text-body">
           I&apos;m Bar Moshe, a full stack engineer in Tel Aviv. You&apos;re hiring
           someone to build real-time, AI-native customer experiences, so instead
-          of a CV I built you a small one. Try it below.
+          of a CV I rebuilt a piece of yours. Try it below.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
