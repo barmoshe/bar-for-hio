@@ -2,7 +2,7 @@ const LINKS = [
   { label: "Email me", href: "mailto:1barmoshe1@gmail.com", primary: true },
   { label: "GitHub", href: "https://github.com/barmoshe", primary: false },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/barmoshe/", primary: false },
-  { label: "Download CV", href: "/Bar_Moshe_Resume.pdf", primary: false, download: true },
+  { label: "Download CV", href: "/Bar_Moshe_CV_HiO.pdf", primary: false, download: true },
 ];
 
 export default function Contact() {
